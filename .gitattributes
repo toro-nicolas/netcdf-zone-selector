@@ -1,0 +1,3 @@
+# Disable statistics for generated documentation
+docs/html/* linguist-detectable=false
+docs/html/search/* linguist-detectable=false
