@@ -44,7 +44,7 @@ variable_information_t selector::get_variable_from_dim_id(file_information_t & i
             return in_s_file.vs_variables[i_index_var];
     }
     DEBUG;
-    fprintf(stderr, RED BOLD "Get variable from dim:" RESET RED " %s: Cannot find variable of dim %zu\n" RESET,
+    fprintf(stderr, RED BOLD "Get variable from dim:" RESET RED " %s: Cannot find variable of dim %d\n" RESET,
         in_s_file.ac_path, in_i_dim_id);
     std::exit(EXIT_FAILURE);
 }
