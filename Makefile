@@ -8,7 +8,6 @@
 NAME		=	netcdf-zone-selector
 
 CC		=	g++
-DEBUG_MODE	=
 
 BUILDDIR 	=	./build
 SRCDIR		=	./src
@@ -18,10 +17,10 @@ SRCS		=	$(shell find . -path ./tests -prune -o -type f -name "*.cc" -print)
 OBJS     	=	$(patsubst ./%.cc, $(BUILDDIR)/%.o, $(SRCS))
 
 CFLAGS		=	-Werror -Wextra -I./include/
-DEBUGFLAGS	=	-g3
+DEBUGFLAGS	=	-g3 -DDEBUG_MODE
 OPTIMIZEFLAGS	=	-O3
 
-LDFLAGS 	=	-lnetcdf -lproj -lm #-lhdf5
+LDFLAGS 	=	-lnetcdf -lproj -lm -lboost_program_options
 
 .PHONY: all create-build debug clean fclean re
 
@@ -37,7 +36,6 @@ $(BUILDDIR)/%.o: ./%.cc
 
 debug: CFLAGS += $(DEBUGFLAGS)
 debug: OPTIMIZEFLAGS =
-debug: DEBUG_MODE = debug
 debug: all
 
 $(NAME): $(OBJS)
@@ -47,7 +45,7 @@ clean:
 	@rm -rf $(BUILDDIR)
 	@echo -e "\033[1;31mAll .o deleted.\033[0m"
 
-fclean:
+fclean: clean
 	@rm -rf vgcore*
 	@rm -rf *.log
 	@rm -rf $(NAME)
