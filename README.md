@@ -51,7 +51,7 @@ OPTIONS
   --depth2 arg          Depth 2 [CUBIC MODE]: depth of the second corner of the cubic zone
 ```
 
-Here is the list of default settings:
+Here is the list of default settings :
 ```sh
 lon_ref = 0.0°
 lat_ref = 0.0°

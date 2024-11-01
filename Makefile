@@ -12,7 +12,7 @@ CC		=	g++
 BUILDDIR 	=	./build
 SRCDIR		=	./src
 
-SRCS		=	$(shell find . -path ./tests -prune -o -type f -name "*.cc" -print)
+SRCS		=	$(shell find $(SRCDIR) -path ./tests -prune -o -type f -name "*.cc" -print)
 
 OBJS     	=	$(patsubst ./%.cc, $(BUILDDIR)/%.o, $(SRCS))
 
