@@ -1,4 +1,4 @@
-name: netcdf-assembler
+name: netcdf-zone-selector
 
 on: [push, pull_request]
 
