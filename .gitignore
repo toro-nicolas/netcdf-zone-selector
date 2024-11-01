@@ -15,7 +15,7 @@
 *.o
 *.a
 a.out
-netcdf-display
+netcdf-zone-selector
 
 # Unit_tests files
 *.gcda
