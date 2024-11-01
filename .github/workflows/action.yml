@@ -1,0 +1,26 @@
+name: netcdf-assembler
+
+on: [push, pull_request]
+
+env:
+  EXECUTABLE: netcdf-zone-selector
+
+jobs:
+  check_program:
+    runs-on: ubuntu-latest
+    container:
+      image: epitechcontent/epitest-docker
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+      - name: Install NetCDF
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libnetcdf-dev netcdf-bin
+      - name: Launch "make"
+        run: make
+        timeout-minutes: 2
+      - name: Launch "make clean"
+        run: make clean
+      - name: Check program compilation
+        run: .github/workflows/check_program_compilation ${{ env.EXECUTABLE }}
