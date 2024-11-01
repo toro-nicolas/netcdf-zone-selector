@@ -113,7 +113,7 @@ Table of contents 📑</h1>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Description 📝</h1>
 <p>The <b>netcdf-zone-selector</b> is a project from my internship at <a href="https://www.seagnal.fr/">Seagnal</a>, during my <b>2nd year</b> in <a href="https://www.epitech.eu/"><b>EPITECH</b></a> Grand Ecole program. <br  />
- Its purpose is to create in <a href="https://en.wikipedia.org/wiki/C%2B%2B"><b>C++</b></a> a program for extract a zone from a <a href="https://en.wikipedia.org/wiki/NetCDF">NetCDF</a> (or <a href="https://en.wikipedia.org/wiki/GRIB">GRIB</a>) file.</p>
+ Its purpose is to create in <a href="https://en.wikipedia.org/wiki/C%2B%2B"><b>C++</b></a> a program to extract a zone from a <a href="https://en.wikipedia.org/wiki/NetCDF">NetCDF</a> (or <a href="https://en.wikipedia.org/wiki/GRIB">GRIB</a>) file.</p>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Usage ⚔️</h1>
 <p>You can run netcdf-zone-selector like this : </p><div class="fragment"><div class="line">./netcdf-zone-selector --input input_file.nc --output output_file.nc --mode range --lat_ref 0 --lon_ref 0 --lat_north 111000 --lat_north 111000 --lon_west 111000 --lon_east 111000</div>
@@ -160,7 +160,7 @@ Usage ⚔️</h1>
 <div class="line">depth2 = min double</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
 Compilation 🛠️</h1>
-<p><a href="https://docs.unidata.ucar.edu/netcdf-c/current/"><b>NetCDF lib</b></a> is required to compile the project.</p>
+<p><a href="https://docs.unidata.ucar.edu/netcdf-c/current/"><b>NetCDF lib</b></a>, <a href="https://proj.org/en/9.5/"><b>PROJ lib</b></a> and <a href="https://www.boost.org/"><b>Boost</b></a> are required to compile the project.</p>
 <p>You can compile the project with this command : </p><div class="fragment"><div class="line">make</div>
 </div><!-- fragment --><p>If you want to debug the program, you can compile the project with this : </p><div class="fragment"><div class="line">make debug </div>
 </div><!-- fragment --><p>If you want clean the project, you can run this command : </p><div class="fragment"><div class="line">make fclean</div>

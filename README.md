@@ -12,7 +12,7 @@
 
 ## Description 📝
 The **netcdf-zone-selector** is a project from my internship at [Seagnal](https://www.seagnal.fr/), during my **2nd year** in [**EPITECH**](https://www.epitech.eu/) Grand Ecole program.  
-Its purpose is to create in [**C++**](https://en.wikipedia.org/wiki/C%2B%2B) a program for extract a zone from a [NetCDF](https://en.wikipedia.org/wiki/NetCDF) (or [GRIB](https://en.wikipedia.org/wiki/GRIB)) file.
+Its purpose is to create in [**C++**](https://en.wikipedia.org/wiki/C%2B%2B) a program to extract a zone from a [NetCDF](https://en.wikipedia.org/wiki/NetCDF) (or [GRIB](https://en.wikipedia.org/wiki/GRIB)) file.
 
 
 ## Usage ⚔️
@@ -72,7 +72,7 @@ depth2 = min double
 
 
 ## Compilation 🛠️
-[**NetCDF lib**](https://docs.unidata.ucar.edu/netcdf-c/current/) is required to compile the project.
+[**NetCDF lib**](https://docs.unidata.ucar.edu/netcdf-c/current/), [**PROJ lib**](https://proj.org/en/9.5/) and [**Boost**](https://www.boost.org/) are required to compile the project.
 
 You can compile the project with this command :
 ```sh

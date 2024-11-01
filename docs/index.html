@@ -42,7 +42,7 @@
 </ul>
 <h2 id="description-📝">Description 📝</h2>
 <p>The <strong>netcdf-zone-selector</strong> is a project from my internship at <a href="https://www.seagnal.fr/">Seagnal</a>, during my <strong>2nd year</strong> in <a href="https://www.epitech.eu/"><strong>EPITECH</strong></a> Grand Ecole program.<br>
-Its purpose is to create in <a href="https://en.wikipedia.org/wiki/C%2B%2B"><strong>C++</strong></a> a program for extract a zone from a <a href="https://en.wikipedia.org/wiki/NetCDF">NetCDF</a> (or <a href="https://en.wikipedia.org/wiki/GRIB">GRIB</a>) file.</p>
+Its purpose is to create in <a href="https://en.wikipedia.org/wiki/C%2B%2B"><strong>C++</strong></a> a program to extract a zone from a <a href="https://en.wikipedia.org/wiki/NetCDF">NetCDF</a> (or <a href="https://en.wikipedia.org/wiki/GRIB">GRIB</a>) file.</p>
 <h2 id="usage-⚔️">Usage ⚔️</h2>
 <p>You can run netcdf-zone-selector like this :</p>
 <pre class=" language-sh"><code class="prism  language-sh">./netcdf-zone-selector --input input_file.nc --output output_file.nc --mode range --lat_ref 0 --lon_ref 0 --lat_north 111000 --lat_north 111000 --lon_west 111000 --lon_east 111000  
@@ -93,7 +93,7 @@ depth1 = max double
 depth2 = min double  
 </code></pre>
 <h2 id="compilation-🛠️">Compilation 🛠️</h2>
-<p><a href="https://docs.unidata.ucar.edu/netcdf-c/current/"><strong>NetCDF lib</strong></a> is required to compile the project.</p>
+<p><a href="https://docs.unidata.ucar.edu/netcdf-c/current/"><strong>NetCDF lib</strong></a>, <a href="https://proj.org/en/9.5/"><strong>PROJ lib</strong></a> and <a href="https://www.boost.org/"><strong>Boost</strong></a> are required to compile the project.</p>
 <p>You can compile the project with this command :</p>
 <pre class=" language-sh"><code class="prism  language-sh">make  
 </code></pre>
